@@ -1,0 +1,211 @@
+.nav-container nav{
+    display: flex;
+    justify-content: space-between;
+}
+.nav-container a{
+    color: whitesmoke;
+    text-decoration: none;
+}
+.nav-container a:link{
+    
+    border: 1px solid black;
+    padding: 5px;
+    background-color: black;
+    border-radius: 4px;
+}
+.nav-container a:active{
+    color: blue;
+   
+}
+
+.nav-container a:hover{
+    text-decoration: underline;
+}
+#welcome-header{
+    text-align: center;
+    font-size: 18px;
+}
+#welcome-paragraph{
+    text-align: center;
+    font-size: 18px;
+}
+
+
+.chat-box {
+    border: 1px solid black;
+    height: 150px;
+    overflow: scroll;
+    scroll-snap-type: y mandatory;
+    overflow-x: hidden;
+}
+
+.chat-box li {
+    font-size: 18px;
+    list-style: none;
+    margin-left: 10px;
+}
+
+.chat-box li:nth-child(odd) {
+    margin-bottom: 5px;
+    background-color: gray;
+    padding: 5px;
+}
+
+.chat-box li:nth-child(even) {
+    margin-bottom: 5px;
+    background-color: antiquewhite;
+    padding: 5px;
+}
+
+.chat-box li:nth-child(1) {
+    margin-top: 5px;
+}
+
+.chat-input {
+    border: 1px solid yellow;
+}
+
+.chat-input input {
+    width: 25%;
+    padding: 10px;
+}
+
+.chat-input button {
+    padding: 10px;
+    width: 15%;
+
+}
+
+.input-username button {
+    padding: 10px;
+    width: 15%;
+}
+
+.input-username input {
+    width: 25%;
+    padding: 10px;
+}
+
+.chat-input button:hover {
+    border: 2px solid black;
+    background-color: gray;
+}
+
+.a-new-user li:nth-child(1) {
+    background-color: lightblue;
+}
+
+.room-header {
+    text-align: center;
+}
+
+#online {
+    display: none;
+}
+
+#tip p {
+    color: red;
+}
+
+#tip {
+    text-align: center;
+}
+
+.private-msg-button {
+    margin-right: 10px;
+    padding: 5px;
+    border-radius: 2px 2px 2px 2px;
+}
+
+.private-chat-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid green;
+
+}
+
+.private-chat-details {
+    border: 1px solid red;
+    flex-basis: 40%;
+    visibility: hidden;
+}
+
+.private-chat-details:nth-child(even) {
+    margin-left: 8px;
+}
+
+.private-chat-box {
+    border: 1px solid black;
+    height: 150px;
+    overflow: scroll;
+    scroll-snap-type: y mandatory;
+    overflow-x: hidden;
+}
+
+.private-chat-box li {
+    font-size: 18px;
+    list-style: none;
+    margin-left: 10px;
+}
+
+.private-chat-box li:nth-child(odd) {
+    margin-bottom: 5px;
+    background-color: gray;
+    padding: 5px;
+}
+
+.private-chat-box li:nth-child(even) {
+    margin-bottom: 5px;
+    background-color: antiquewhite;
+    padding: 5px;
+}
+
+.private-chat-box li:nth-child(1) {
+    margin-top: 5px;
+}
+
+.private-chat-input {
+    border: 1px solid black;
+}
+
+.private-chat-input input {
+    width: 60%;
+    padding: 10px;
+}
+
+.private-chat-input button {
+    padding: 10px;
+    width: 30%;
+
+}
+
+.notification-container {
+    visibility: hidden;
+}
+
+.notification-dot {
+
+    height: 10px;
+    width: 10px;
+    margin-left: 10px;
+    background-color: #bbb;
+    border-radius: 70%;
+    display: inline-block;
+    background-color: green;
+}
+#Joining{
+    text-align: center;
+    visibility: hidden;
+}
+#Joining p{
+    color: red;
+    font-size: 20px;
+}
+.img-container{
+    text-align: center;
+}
+#socket-img{
+    width: 50%;
+    height: 50%;
+}

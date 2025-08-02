@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>room 3</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../src/styles/index.css">
+</head>
+
+<body>
+    <div class="nav-container">
+        <nav>
+            <a id="home" data-room-name="home" href="/index.html">home</a>
+            <a id="room1" data-room-name="room1" href="/chat/room1.html">room1</a>
+            <a id="room2" data-room-name="room2" href="/chat/room2.html">room2</a>
+            <a id="room3" data-room-name="room3" href="/chat/room3.html">room3</a>
+            <a id="room4" data-room-name="room4" href="/chat/room4.html">room4</a>
+        </nav>
+    </div>
+    <div class="room-header">
+        <h3>room 3</h3>
+    </div>
+    <div id="tip">
+        <p>please enter a username to start chatting!!!!</p>
+    </div>
+    <div id="Joining">
+        <p>Joining the room.............</p>
+    </div>
+    <button id="show-users">Show Users</button>
+    <div class="online-container" id="online">
+        <h3>Who's in the room</h3>
+        <p>Users:</p>
+        <div id="online-user-list">
+
+        </div>
+    </div>
+    <div class="chat-container">
+        <div class="typing-indictator">
+            <p id="single-typing"></p>
+            <div id="multi-typing">
+
+            </div>
+        </div>
+        <div class="chat-box" id="chatbox">
+        </div>
+        <div class="chat-input">
+            <form action="">
+                <input type="text" id="message" placeholder="enter something to say.......">
+                <button type="button" id="addMsg">Submit</button>
+            </form>
+        </div>
+    </div>
+    <br>
+    <div class="input-username">
+        <input type="text" id="username" placeholder="enter a user name"><button id="addUsername">Submit</button>
+    </div>
+    <div id="display-name">
+    </div>
+    <br>
+    <div class="private-chat-container"> </div>
+
+    <!-- custom template that i will reuse multiple times with a few modifications  -->
+    <template>
+        <div class="private-chat-details">
+            <div class="private-name-button">
+                <button class="hide-display"></button>
+            </div>
+            <div class="notification-container">
+                <button class="notify" type="button" id="notify"></button><span class="notification-dot"></span>
+            </div>
+            <div class="private-typing-indictator">
+                <p class="private-single-typing"></p>
+            </div>
+            <div class="private-chat-box">
+            </div>
+            <div class="private-chat-input">
+                <form action="">
+                    <!-- this will be custom made button with the private username in the button -->
+                    <input type="text" class="private-message-input" id="private-message-input" placeholder="enter something to say.......">
+                    <button type="button" class="private-sendMsg" >Submit</button>
+                </form>
+                <button type="button" class="close-private-chat" type="button"></button>
+            </div>
+        </div>
+    </template>
+    <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+    <!-- <script src="/socket.io/socket.io.js"></script> -->
+    <script src="../src/scripts/chat.js" type="module"></script>
+</body>
+<style>
+  
+</style>
+</html>
